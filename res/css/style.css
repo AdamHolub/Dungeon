@@ -527,8 +527,8 @@ html{
     transform: translate(-50%, -50%);
     width: 400px;
     height: 200px;
-    padding-left: 100px;
-    padding-top: 50px;
+    padding-left: 110px;
+    padding-top: 55px;
 }
 .odkazback{
     background: URL('../img/small.png') center center no-repeat;
