@@ -1,0 +1,549 @@
+*{
+    box-sizing: border-box;
+}
+body,
+html{
+    margin: 0;
+}
+/*
+         První fight
+*/
+.pozadifight{
+    width: 100%;
+    height: 929px;
+    background: URL('../img/pozadifight.png') center center no-repeat;
+}
+#player{
+    background: URL('../img/steve.png') center center no-repeat;
+    position: absolute;
+    left: 42%;
+    top: 30%;
+    transform: translate(-42%,-30%);
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    transition: .1s;
+}
+#enemy{
+    position: absolute;
+    margin: 0;
+    top: 1%;
+    left: 80%;
+    transform: translate(-80%, -1%);
+    background: URL('../img/zombie.png') center center no-repeat;
+    height: 700px;
+    width: 400px;
+    margin: 10px;
+}
+#attack {
+    position: absolute;
+    background: URL('../img/attack.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    left: 25%;
+    transform: translate(-60%, -25%);
+    cursor:pointer;
+}
+#yourHP{
+    background: URL("../img/small.png")center center no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 42%;
+    top: 70%;
+    transform: translate(-42%, -70%);
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+#revive{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%);
+    padding-left: 23px;
+    padding-top: 12px;
+    background: URL("../img/small.png") center center no-repeat;
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    font-size: 20px;
+}
+#enemyHP{
+    position: absolute;
+    font-size:30px ;
+    left: 75%;
+    top: 70%;
+    transform: translate(-75%, -70%);
+    background: URL("../img/small.png")center center no-repeat;
+    width: 100px;
+    height: 50px;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+#info{
+    background: URL('../img/small.png') center center no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 70%;
+    left: 20%;
+    transform: translate(-70%, -20%);
+    font-size: 20px;
+}
+#PlayerCoins{
+    background: URL('../img/small.png') center center no-repeat;
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: 0px;
+}
+#PlayerMaxHP{
+    background: URL('../img/small.png') center center no-repeat;
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: 0px;
+}
+#PlayerDMG{
+    background: URL('../img/small.png') center center no-repeat;
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: 0px;
+}
+.stat{
+    padding: 10px;
+}
+.stat2{
+    float: right;
+}
+/*
+          Druhý fight
+*/
+.pozadinether{
+    background: URL('../img/netherroom.png') center center no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+#enemynether{
+    background: URL('../img/enemynether.png') center center no-repeat;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top:20%;
+    left: 80%;
+    transform: translate(-80%, -20%);
+}
+#enemyHPnether{
+    background: URL("../img/small.png");
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    transform: translate(-70%,-78%);
+    padding-left: 35px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.nether{
+    background: URL('../img/small.png') center center no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 90%;
+    left:5%;
+    transform: translate(-5%, -90%);
+    text-decoration: none;
+    color: black;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-style: bold;
+}
+/*
+       Třetí fight
+*/
+.end{
+    background: URL('../img/small.png') center center no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 90%;
+    left:5%;
+    transform: translate(-5%, -90%);
+    text-decoration: none;
+    color: black;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-style: bold;
+}
+#endenemy{
+    background: URL('../img/endermanenemy.png') center center no-repeat;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    transform: translate(-75%,-10%);
+}
+.pozadiend{
+    background: URL('../img/endroom.png') center center no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+#enemyHPend{
+    background: url("../img/small.png");
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    font-size: 30px;
+    left: 74%;
+    top: 70%;
+    transform: translate(-74%, -70%);
+    padding-top: 5px;
+    padding-left: 20px;
+}
+/*
+         Čtvrtý fight
+*/
+.endfinal{
+    background: URL('../img/small.png')center center no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 90%;
+    left:5%;
+    transform: translate(-5%, -90%);
+    font-size: 20px;
+    padding-left: 7px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+.pozadiendfinal{
+    background: URL("../img/endroom.png")center center no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+#endenemyfinal{
+    background: URL('../img/finalboss.png') center center no-repeat;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top:10%;
+    left: 90%;
+    transform: translate(-90%, -10%);
+}
+#enemyHPendfinal{
+    background: URL('../img/small.png')center center no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-75%, -70%);
+    padding-left: 18px;
+    padding-top: 7px;
+    font-size: 30px;
+}
+/* 
+                shop           
+*/
+.pozadishop{
+    background: URL('../img/shoppozadi.png') center center no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.odkazbackfight{
+    background: URL("../img/small.png")center center no-repeat;
+    width: 100px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 50px;
+}
+#sharpnes{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-70%, -40%);
+}
+.shprice{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 84%;
+    left: 40%;
+    transform: translate(-84%, -40%);
+    font-size: 20px;
+    font-style: bold;
+}
+.hpprice{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translate(-85%, -60%);
+    font-size: 20px;
+    font-style: bold;
+}
+#hp{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 73%;
+    left: 60%;
+    transform: translate(-73%, -60%);
+}
+#wooden{
+    cursor: pointer;
+    background: URL('../img/wooden.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-20%, -20%);
+}
+#stone{
+    cursor: pointer;
+    background: URL('../img/stone.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    transform: translate(-20%, -40%);
+}
+#iron{
+    cursor: pointer;
+    background: URL('../img/iron.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    transform: translate(-20%, -60%);
+}
+#gold{
+    cursor: pointer;
+    background: URL('../img/golden.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    transform: translate(-80%, -20%);
+}
+#dia{
+    cursor: pointer;
+    background: URL('../img/dia.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    transform: translate(-80%, -40%);
+}
+#netherite{
+    cursor: pointer;
+    background: URL('../img/netherite.png') center center no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 80%;
+    top: 60%;
+    transform: translate(-80%, -60%);
+}
+#descriptionwood{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 20%;
+    top: 32%;
+    transform: translate(-20%, -32%);
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+#descriptionstone{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+#descriptioniron{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    transform: translate(-20%, -70%);
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+#descriptiongold{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 80%;
+    top: 32%;
+    transform: translate(-80%, -32%);
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+#descriptiondia{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-80%, -50%);
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+#descriptionnetherite{
+    background: URL('../img/small.png');
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    transform: translate(-80%, -70%);
+    padding-top: 10px;
+    font-size: 18px;
+}
+/*
+             Menu
+*/
+.pozadihlmenu{
+    background: URL('../img/pozadi.png') center center no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.odkazqu{
+    background: URL('../img/small.png') center center no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-60%, -50%);
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.pozadiquest{
+    background: URL('../img/quest.png') center center no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.update{
+    background: URL('../img/small.png');
+    font-size: 15px;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+}
+.odkazfi{
+    background: URL('../img/small.png') center center no-repeat;
+    top: 70%;
+    left: 5%;
+    transform: translate(-5%, -70%,);
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    padding-left: 25px;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.odkazsh{
+    background: URL('../img/small.png') center center no-repeat;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+    transform: translate(-70%, -60%);
+    height: 50px;
+    width: 100px;
+    padding-left: 25px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.prodkaz{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.odkazback{
+    background: URL('../img/small.png') center center no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.pozadimenu{
+    background: URL('../img/menu.png') center center no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
